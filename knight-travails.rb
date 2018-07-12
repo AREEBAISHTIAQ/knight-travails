@@ -20,7 +20,7 @@ until queue.empty? do
     get_moves(current.location).each do |p| 
     queue << Location.new(p, current.path + [p]) unless visited.include?(p)
     visited << p
-        end
+      end
     end
         nil
 end
